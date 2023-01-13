@@ -12,4 +12,10 @@ public class cloudController {
     public String helloWorld(@RequestParam(defaultValue = "Cloud") String name) {
         return "Hello " + name;
     }
+
+    @GetMapping("/hmm")
+    public String hmm(@RequestParam(defaultValue = "Cloud") String name) {
+        return "hmm " + name;
+    }
+
 }
